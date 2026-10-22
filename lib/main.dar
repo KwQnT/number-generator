@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const NumberGeneratorApp());
+}
+
+class NumberGeneratorApp extends StatelessWidget {
+  const NumberGeneratorApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Генератор номеров',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color(0xFF0E0E12),
+      ),
+      home: const Center(
+        child: Text(
+          'Приложение создается...',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
+}
